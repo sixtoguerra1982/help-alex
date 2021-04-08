@@ -1,0 +1,7 @@
+{
+  "name": "calendar",
+  "private": true,
+  "dependencies": {
+    "@fullcalendar/core": "^5.6.0"
+  }
+}
