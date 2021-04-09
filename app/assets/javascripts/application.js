@@ -12,7 +12,7 @@
 //
 
 //= require rails-ujs
-//= require @fullcalendar/core/main
+//= require fullcalendar/main
 //= require activestorage
 //= require turbolinks
 //= require_tree .
