@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+20.times do
+	start_at = Random.rand(10).days.ago + 5.days
+	Event.create(
+		title: Faker::Food.dish,
+		start: start_at,
+		end: start_at
+	)
+end

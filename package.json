@@ -2,6 +2,7 @@
   "name": "calendar",
   "private": true,
   "dependencies": {
-    "fullcalendar": "^5.6.0"
+    "fullcalendar": "^5.6.0",
+    "jquery": "^3.6.0"
   }
 }
