@@ -1,19 +1,12 @@
-<h1>Home#index</h1>
-
-
-<div id='calendar'></div>
-
-<script>
-  
-
 $( document ).on('turbolinks:load', function() {
+    console.log("XYZ<%= @events %>");
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
     eventSources: [
         // your event source
         {
-            events: <%= raw @events.to_json %>,
+            events: "<%= raw @events.to_json %>",
             editable: true,
             color: 'yellow',     // an option!
             textColor: 'black', // an option!
@@ -23,6 +16,4 @@ $( document ).on('turbolinks:load', function() {
         ]
     });
     calendar.render();
-})
-
-</script>
+  })
